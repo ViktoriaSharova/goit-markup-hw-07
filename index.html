@@ -19,9 +19,9 @@
 <body>
 <header class="main-header">
     <div class="container header-container">
-        <!-- <nav class="navigation"> -->
+        <nav class="navigation">
         <a class="logo-link link" href="./index.html">Web<span class="logo-color">Studio</span></a>
-        <!-- <ul class="menu-list list">
+        <ul class="menu-list list">
             <li class="menu-item">
                 <a class="menu-link link current" href="./index.html">Studio</a>
             </li>
@@ -31,9 +31,9 @@
             <li class="menu-item">
                 <a class="menu-link link" href="">Contacts</a>
             </li>
-        </ul> -->
-        <!-- </nav> -->
-    <!-- <address class="contact">
+        </ul>
+        </nav>
+    <address class="contact">
         <ul class="address-list list">
             <li class="address-item">
                 <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -44,12 +44,17 @@
 
             </li>
         </ul>
-    </address> -->
+    </address>
+    <button type="button" class="mobile-menu-open data-menu-open">
+        <svg class="mobile-menu-open style-burger" width="32" heigh="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+    </button>
     
     </div>
     <div class="mob-menu is-hidden">
-        <button type="button" class="burger-btn">
-            <svg class="burger-icon" width="32" heigh="22">
+        <button type="button" class="mobile-menu-open data-menu-open">
+            <svg class="burger-icon style-burger" width="32" heigh="22">
                 <use href="./images/icons.svg#icon-burger"></use>
             </svg>
         </button>
@@ -112,12 +117,12 @@
     </div>
 </header>
 <main class="main">
-    <section class="hero-section">
+    <!-- <section class="hero-section">
         <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button class="hero-button btn " type="button" data-modal-open>Order Service</button>
         </div>
-    </section>
+    </section> -->
     <section class="secondary-section ">
         <div class="container secondary-section-wrap">
         <!-- <h2 class="visually-hidden" >Our benefits</h2> -->
@@ -165,29 +170,51 @@
         </ul>
         </div>
     </section>
-    <section class="profile">
+    <!-- <section class="profile">
         <div class="container profile-wrap">
          <h2 class="title-text">What are we doing</h2>
         <ul class="list-img list">
             <li class="list-profile">
-                <img srcset="./images/img-desktop-2x.jpg. 2x"
-                src="./images/img-desktop-1x.jpg" alt="Profile is opened on the monitor for viewing" width="360" height="300">
+                    <picture>
+                        <source srcset="./images/img-desktop-1x.jpg 1x, ./images/img-desktop-2x.jpg 2x" media="(min-width: 1158px)">
+                        <source srcset="./images/img-tab-1x.jpg 1x, ./images/img-tab-2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/img-mob-1x.jpg 1x, ./images/img-mob-2x.jpg 2x" media="(min-width: 428px)">
+                <img src="./images/img-desktop-1x.jpg" alt="Profile is opened on the monitor for viewing" width="360" height="300">
+                    </picture>
             </li>
             <li class="list-profile">
+                <picture>
+                    <source srcset="./images/img2-desktop-1x.jpg 1x, ./images/img2-desktop-2x.jpg 2x" media="(min-width: 1158px)">
+                    <source srcset="./images/img2-tab-1x.jpg 1x, ./images/img2-tab-2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/img2-mob-1x.jpg 1x, ./images/img2-mob-2x.jpg 2x" media="(min-width: 428px)">
                 <img src="./images/img2.jpg" alt="Chat with correspondence is open on the phone" width="360" height="300">
+                </picture>
             </li>
             <li class="list-profile">
+                <picture>
+                    <source srcset="./images/img3-desktop-1x.jpg 1x, ./images/img3-desktop-2x.jpg 2x" media="(min-width: 1158px)">
+                    <source srcset="./images/img3-tab-1x.jpg 1x, ./images/img3-tab-2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/img3-mob-1x.jpg 1x, ./images/img3-mob-2x.jpg 2x" media="(min-width: 428px)">
                 <img src="./images/img3.jpg" alt="View site on phone" width="360" height="300">
+                </picture>
             </li>
         </ul>
         </div>
-    </section>
+    </section> -->
     <section class="team-section">
         <div class="container">
          <h2 class="title-text">Our Team</h2>
         <ul class="list-team list">
             <li class="list-item-team">
+                <picture>
+                    <source srcset="./images/team1-desktop-1x.jpg 1x, ./images/team1-desktop-2x.jpg 2x"
+                    media="(min-width: 1158px)">
+                    <source srcset="./images/team1-tab-1x.jpg 1x, ./images/team1-tab-2x.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source srcset="./images/team1-mob-1x.jpg 1x, ./images/team1-mob-2x.jpg 2x"
+                    media="(min-width: 428px)">
                 <img src="./images/card1.jpg" alt="man in shirt smiling" width="264" height="260">
+                </picture>
                 <div class="team">
                     <h3 class="secondary-title-team">Mark Guerrero</h3>
                     <p class="secondary-text-team">Product Designer</p>
@@ -224,7 +251,12 @@
                     </div>
             </li>
             <li class="list-item-team">
+                <picture>
+                    <source srcset="./images/team2-desktop-1x.jpg 1x, ./images/team2-desktop-2x.jpg 2x" media="(min-width: 1158px)">
+                    <source srcset="./images/team2-tab-1x.jpg 1x, ./images/team2-tab-2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/team2-mob-1x.jpg 1x, ./images/team2-mob-2x.jpg 2x" media="(min-width: 428px)">
                 <img src="./images/card2.jpg" alt="a man in a shirt looks away and smiles" width="264" height="260">
+                </picture>
                 <div class="team">
                     <h3 class="secondary-title-team">Tom Ford</h3>
                     <p class="secondary-text-team ">Frontend Developer</p>
@@ -257,8 +289,13 @@
                     </div>
             </li>
             <li class="list-item-team">
+                    <picture>
+                        <source srcset="./images/team3-desktop-1x.jpg 1x, ./images/team3-desktop-2x.jpg 2x" media="(min-width: 1158px)">
+                        <source srcset="./images/team3-tab-1x.jpg 1x, ./images/team3-tab-2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/team3-mob-1x.jpg 1x, ./images/team3-mob-2x.jpg 2x" media="(min-width: 428px)">
                 <img src="./images/card3.jpg" alt="girl in pink sweater and long hair" width="264" height="260">
-                <div class="team">
+                    </picture>
+                    <div class="team">
                     <h3 class="secondary-title-team">Camila Garcia</h3>
                     <p class="secondary-text-team">Marketing</p>
                       <ul class="icon-team">
@@ -294,8 +331,13 @@
                     </div>
             </li>
             <li class="list-item-team">
-                <img src="./images/card4.jpg" alt="smiling man in t-shirt" width="264" height="260">
-                <div class="team">
+                    <picture>
+                        <source srcset="./images/team4-desktop-1x.jpg 1x, ./images/team4-desktop-2x.jpg 2x" media="(min-width: 1158px)">
+                        <source srcset="./images/team4-tab-1x.jpg 1x, ./images/team4-tab-2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/team4-mob-1x.jpg 1x, ./images/team4-mob-2x.jpg 2x" media="(min-width: 428px)">
+                        <img src="./images/card4.jpg" alt="smiling man in t-shirt" width="264" height="260">
+                    </picture>
+                    <div class="team">
                     <h3 class="secondary-title-team">Daniel Wilson</h3>
                     <p class="secondary-text-team">UI Designer</p>
                       <ul class="icon-team">
