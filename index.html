@@ -45,36 +45,36 @@
             </li>
         </ul>
     </address>
-    <button type="button" class="mobile-menu-open data-menu-open">
+    <button type="button" class="mobile-menu-open" data-menu-open>
         <svg class="mobile-menu-open style-burger" width="32" heigh="22">
             <use href="./images/icons.svg#icon-burger"></use>
         </svg>
     </button>
     
     </div>
-    <div class="mob-menu is-hidden">
-        <button type="button" class="mobile-menu-open data-menu-open">
-            <svg class="burger-icon style-burger" width="32" heigh="22">
-                <use href="./images/icons.svg#icon-burger"></use>
+    <div class="mob-menu is-hidden" data-menu>
+        <div class="container mobile-menu-container">
+        <button type="button" class="modal-close btn-mob" data-menu-close>
+            <svg class="mobile-menu-close style-burger" width="8" heigh="8">
+                <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
         </button>
-        <button type="button" class="menu-close-btn">X</button>
-            <div class="container header-container">
-                <nav class="navigation">
-                    <ul class="menu-list list">
-                        <li class="menu-item">
-                            <a class="menu-link link current" href="./index.html">Studio</a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link link" href="./portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link link" href="">Contacts</a>
-                        </li>
-                    </ul>
+            <nav class="navigation">
+                <ul class="menu-list-mob list">
+                    <li class="menu-item">
+                     <a class="menu-link link current" href="./index.html">Studio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link link" href="">Contacts</a>
+                    </li>
+                </ul>
                 </nav>
-                <address class="contact">
-                    <address class="address-list list">
+                <div class="mobile-menu-contact">
+                <class class="contact">
+                    <address class="address-list-mob list">
                         <li class="address-item">
                             <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             
@@ -114,7 +114,9 @@
                                 </a>
                             </li>
                         </ul>
-    </div>
+                </div>
+        </div> 
+   </div>
 </header>
 <main class="main">
     <!-- <section class="hero-section">
