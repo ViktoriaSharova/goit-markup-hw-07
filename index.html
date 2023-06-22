@@ -52,8 +52,8 @@
     </button>
     
     </div>
-    <div class="mob-menu is-hidden" data-menu>
-        <div class="container mobile-menu-container">
+    <div class="mob-menu" data-menu>
+        <div class="container-mob mobile-menu-container">
         <button type="button" class="modal-close btn-mob" data-menu-close>
             <svg class="mobile-menu-close style-burger" width="8" heigh="8">
                 <use href="./images/icons.svg#icon-close-black"></use>
@@ -76,15 +76,14 @@
                 <class class="contact">
                     <address class="address-list-mob list">
                         <li class="address-item">
-                            <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            
+                            <a class="contact-link-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
                         </li>
                         <li class="address-item">
-                            <a class="contact-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                            <a class="contact-link-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             
                         </li>
                     </address>
-                        <ul class="footer-social ">
+                        <ul class="footer-social-mob ">
                             <li class="footer-social-link list">
                                 <a href="" class="social-link link" target="_blank" rel="noopener noreferrer">
                                     <svg class="social-icon" width="24" height="24">
@@ -119,12 +118,12 @@
    </div>
 </header>
 <main class="main">
-    <!-- <section class="hero-section">
+    <section class="hero-section">
         <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button class="hero-button btn " type="button" data-modal-open>Order Service</button>
         </div>
-    </section> -->
+    </section>
     <section class="secondary-section ">
         <div class="container secondary-section-wrap">
         <!-- <h2 class="visually-hidden" >Our benefits</h2> -->
@@ -543,6 +542,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 
