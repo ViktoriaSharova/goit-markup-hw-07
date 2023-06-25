@@ -133,9 +133,6 @@ img {
 .footer-social-link {
    width: calc((100%-168px) / 4);
 }
-/* .address-list {
-    display: none;
-} */
 
 .header-container {
     display: flex;
@@ -189,11 +186,11 @@ img {
 }
 
 
-/* .mob-menu.is-open {
+.mob-menu.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-} */
+}
 
 .mobile-close {
     position: absolute;
@@ -206,7 +203,7 @@ img {
     display: block;
     margin-left: auto;
     margin-bottom: 32px;
-    /* position: absolute; */
+    position: absolute;
     width: 24px;
     height: 24px;
     /* border-radius: 50%; */
