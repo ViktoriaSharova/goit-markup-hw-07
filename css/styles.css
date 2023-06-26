@@ -1621,6 +1621,13 @@ transform: translate(-50% -50%) scale(0);
     width: calc((100% - 24px) / 2);
   }
   
+  .customers-primery {
+    justify-content: center;
+    margin: 0 auto;
+    width: 552px;
+    gap: 24px;
+  }
+
   .customers-list {
     width: calc((100% - 48px) / 3);
   }
