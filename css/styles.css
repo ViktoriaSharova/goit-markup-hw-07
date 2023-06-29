@@ -1110,7 +1110,7 @@ img {
 }
 
 .btn-subscribe {
-    min-width: 165px;
+    /* min-width: 165px;
     max-height: 40px;
     display: flex;
     justify-content: center;
@@ -1129,8 +1129,24 @@ img {
     color: #FFFFFF;
     padding: 8px 24px;
     border: none;
-    margin: 0 auto;
+    margin: 0 auto; */
     /* margin-top: 16px; */
+
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background: #4D5AE5;
+    color: #FFFFFF;
 }
 
 /* .subscribe-icon {
